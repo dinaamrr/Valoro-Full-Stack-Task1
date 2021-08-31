@@ -4,7 +4,7 @@ const axios = require('axios');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
-const word = require('./recipe');
+const recipe = require('./recipe');
 // express app
 const app = express();
 
@@ -34,7 +34,7 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About' });
 });
 
-app.use(word) ;
+app.use(recipe) ;
 
 // blog routes
 app.get('/blogs/create', (req, res) => {
