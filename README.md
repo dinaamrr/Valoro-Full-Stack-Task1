@@ -6,3 +6,4 @@ save new blogs in database mongodb
 
 heroku deploy
 
+https://valoro-task.herokuapp.com/newrecipe
